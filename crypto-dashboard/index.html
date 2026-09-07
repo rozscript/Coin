@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin - Cryptocurrency Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" stroke="#D9FF62" stroke-width="2"/>
+                        <path d="M16 8V24M12 12H20M12 20H20" stroke="#D9FF62" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">Coin</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav-menu">
+                    <ul>
+                        <li class="nav-item active">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                    <rect x="10" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                    <rect x="3" y="10" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                    <rect x="10" y="10" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 10C3 10 5 6 8.5 6C12 6 13 10 13 10C13 10 14 14 17 14C20 14 20 10 20 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <circle cx="7" cy="14" r="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="15" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>Markets</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="5" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M7 5V3H13V5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <circle cx="10" cy="10" r="2" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 3L12 7H16L13 11L15 17L10 13L5 17L7 11L4 7H8L10 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Watchlist</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 10H17M3 6H17M3 14H17M3 18H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <circle cx="14" cy="4" r="2" fill="currentColor"/>
+                                </svg>
+                                <span>Analytics</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- My Assets Section -->
+                <div class="my-assets">
+                    <h3 class="assets-title">MY ASSETS</h3>
+                    <ul class="assets-list">
+                        <li class="asset-item">
+                            <div class="asset-icon btc">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="7" fill="#F7931A"/>
+                                    <path d="M9.5 6.5C9.8 5.5 10.2 4.8 9 4.5V4H7.5V4.5C7 4.5 6.5 4.6 6 4.7L6.5 5.5C7 5.4 7.5 5.3 8 5.2V7.5H7C5.5 7.5 5 8.5 5 9.5C5 10.5 5.5 11.5 7 11.5V12H8.5V11.5C9 11.4 9.5 11.3 10 11.2L9.5 10.5C9 10.6 8.5 10.7 8 10.8V8.5H9C10.5 8.5 11 7.5 11 6.5C11 5.5 10.5 4.5 9 4.5H9.5V6.5Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <span>Bitcoin</span>
+                        </li>
+                        <li class="asset-item">
+                            <div class="asset-icon eth">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="7" fill="#627EEA"/>
+                                    <path d="M8 4L10 7.5L8 9L6 7.5L8 4Z" fill="white" fill-opacity="0.8"/>
+                                    <path d="M8 9L10 10.5L8 13L6 10.5L8 9Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <span>Ethereum</span>
+                        </li>
+                        <li class="asset-item">
+                            <div class="asset-icon sol">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="7" fill="#00FFA3"/>
+                                    <path d="M5 6L11 4.5L12 6L6 7.5L5 6Z" fill="#1a1a2e"/>
+                                    <path d="M5 8.5L11 7L12 8.5L6 10L5 8.5Z" fill="#1a1a2e"/>
+                                </svg>
+                            </div>
+                            <span>Solana</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Navigation -->
+                <div class="bottom-nav">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="6" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="10" cy="10" r="2" fill="currentColor"/>
+                                </svg>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M4 16C4 13.5 6.5 12 10 12C13.5 12 16 13.5 16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1 class="page-title">Overview</h1>
+                    <p class="greeting">Good afternoon, Zahra</p>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <input type="text" placeholder="Search assets...">
+                    </div>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 3V5M10 15V17M3 10H5M15 10H17M5.5 5.5L7 7M13 13L14.5 14.5M5.5 14.5L7 13M13 7L14.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="notification-btn" aria-label="Notifications">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 3C7 3 5 5 5 8V12L4 14H16L15 12V8C15 5 13 3 10 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 16C8 17.1 8.9 18 10 18C11.1 18 12 17.1 12 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <div class="user-avatar">
+                        <span>ZS</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Market Overview Stats -->
+            <section class="market-overview">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">Total Market Cap</span>
+                        <span class="stat-period">24h</span>
+                    </div>
+                    <div class="stat-value">$2.41T</div>
+                    <div class="stat-change positive">+3.82%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">Trading Volume</span>
+                        <span class="stat-period">24h</span>
+                    </div>
+                    <div class="stat-value">$84.6B</div>
+                    <div class="stat-change positive">+8.14%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">BTC Dominance</span>
+                        <span class="stat-period">24h</span>
+                    </div>
+                    <div class="stat-value">52.84%</div>
+                    <div class="stat-change positive">+0.42%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">Market Sentiment</span>
+                        <span class="stat-label-small">Fear & Greed</span>
+                    </div>
+                    <div class="stat-value">72 <span class="stat-sentiment">/ 100</span></div>
+                    <div class="stat-change positive sentiment-greed">Greed</div>
+                </div>
+            </section>
+
+            <!-- Chart and Trending Section -->
+            <section class="chart-trending-section">
+                <!-- Bitcoin Chart -->
+                <div class="chart-section">
+                    <div class="chart-header">
+                        <div class="chart-title">
+                            <div class="coin-info">
+                                <div class="coin-icon-large btc">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11" fill="#F7931A"/>
+                                        <path d="M14.5 10C15 8.5 15.5 7.5 13.5 7V6H11V7C10.5 7 9.5 7.2 9 7.4L10 9C10.5 8.8 11 8.6 11.5 8.5V12H10C8 12 7.5 13.5 7.5 15C7.5 16.5 8 18 10 18V19H12.5V18C13 17.8 14 17.6 14.5 17.4L13.5 15.5C13 15.7 12.5 15.9 12 16V13H13.5C15.5 13 16 11.5 16 10C16 8.5 15.5 7 13.5 7H14.5V10Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h2 class="chart-coin-name">Bitcoin</h2>
+                                    <span class="chart-pair">BTC / USDT</span>
+                                </div>
+                            </div>
+                            <div class="chart-price-info">
+                                <span class="current-price">$67,842.19</span>
+                                <span class="price-change positive">+4.28%</span>
+                            </div>
+                        </div>
+                        <div class="time-filters">
+                            <button class="time-filter">1D</button>
+                            <button class="time-filter active">1W</button>
+                            <button class="time-filter">1M</button>
+                            <button class="time-filter">3M</button>
+                            <button class="time-filter">1Y</button>
+                            <button class="time-filter">ALL</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <svg class="price-chart" viewBox="0 0 800 300" preserveAspectRatio="none">
+                            <!-- Grid lines -->
+                            <line x1="0" y1="50" x2="800" y2="50" stroke="#1f2937" stroke-width="1" stroke-dasharray="4,4"/>
+                            <line x1="0" y1="100" x2="800" y2="100" stroke="#1f2937" stroke-width="1" stroke-dasharray="4,4"/>
+                            <line x1="0" y1="150" x2="800" y2="150" stroke="#1f2937" stroke-width="1" stroke-dasharray="4,4"/>
+                            <line x1="0" y1="200" x2="800" y2="200" stroke="#1f2937" stroke-width="1" stroke-dasharray="4,4"/>
+                            <line x1="0" y1="250" x2="800" y2="250" stroke="#1f2937" stroke-width="1" stroke-dasharray="4,4"/>
+                            
+                            <!-- Gradient definition -->
+                            <defs>
+                                <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#D9FF62;stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:#D9FF62;stop-opacity:0"/>
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Area fill -->
+                            <path class="chart-area" d="M0,200 Q50,180 100,190 T200,150 T300,160 T400,120 T500,130 T600,80 T700,100 T800,50 L800,300 L0,300 Z" fill="url(#chartGradient)"/>
+                            
+                            <!-- Line -->
+                            <path class="chart-line" d="M0,200 Q50,180 100,190 T200,150 T300,160 T400,120 T500,130 T600,80 T700,100 T800,50" fill="none" stroke="#D9FF62" stroke-width="2.5"/>
+                            
+                            <!-- Current point indicator -->
+                            <circle cx="800" cy="50" r="6" fill="#D9FF62"/>
+                            <circle cx="800" cy="50" r="10" fill="#D9FF62" opacity="0.2"/>
+                            
+                            <!-- Y-axis labels -->
+                            <text x="780" y="45" class="axis-label" fill="#6b7280" font-size="11">$68,500</text>
+                            <text x="780" y="95" class="axis-label" fill="#6b7280" font-size="11">$67,800</text>
+                            <text x="780" y="145" class="axis-label" fill="#6b7280" font-size="11">$67,000</text>
+                            <text x="780" y="195" class="axis-label" fill="#6b7280" font-size="11">$66,200</text>
+                            <text x="780" y="245" class="axis-label" fill="#6b7280" font-size="11">$65,500</text>
+                            
+                            <!-- X-axis labels -->
+                            <text x="50" y="290" class="axis-label" fill="#6b7280" font-size="11">Mon</text>
+                            <text x="150" y="290" class="axis-label" fill="#6b7280" font-size="11">Tue</text>
+                            <text x="250" y="290" class="axis-label" fill="#6b7280" font-size="11">Wed</text>
+                            <text x="350" y="290" class="axis-label" fill="#6b7280" font-size="11">Thu</text>
+                            <text x="450" y="290" class="axis-label" fill="#6b7280" font-size="11">Fri</text>
+                            <text x="550" y="290" class="axis-label" fill="#6b7280" font-size="11">Sat</text>
+                            <text x="650" y="290" class="axis-label" fill="#6b7280" font-size="11">Sun</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Trending Coins -->
+                <div class="trending-section">
+                    <h3 class="trending-title">Trending Coins</h3>
+                    <div class="trending-list">
+                        <div class="trending-item">
+                            <div class="trending-coin">
+                                <div class="trending-icon btc">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9" fill="#F7931A"/>
+                                        <path d="M12 8.5C12.5 7.5 13 6.5 11.5 6V5H9.5V6C9 6 8.5 6.1 8 6.3L9 7.5C9.5 7.3 10 7.1 10.5 7V10H9C7.5 10 7 11 7 12C7 13 7.5 14 9 14V15H11V14C11.5 13.9 12 13.7 12.5 13.5L11.5 12C11 12.2 10.5 12.4 10 12.5V10H11.5C13 10 13.5 9 13.5 8C13.5 7 13 6 11.5 6H12V8.5Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="trending-info">
+                                    <span class="trending-name">Bitcoin</span>
+                                    <span class="trending-symbol">BTC</span>
+                                </div>
+                            </div>
+                            <div class="trending-price">
+                                <span class="price">$67,842.19</span>
+                                <span class="change positive">+4.28%</span>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="trending-coin">
+                                <div class="trending-icon eth">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9" fill="#627EEA"/>
+                                        <path d="M10 5L12.5 9L10 10.5L7.5 9L10 5Z" fill="white" fill-opacity="0.8"/>
+                                        <path d="M10 10.5L12.5 12L10 15L7.5 12L10 10.5Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="trending-info">
+                                    <span class="trending-name">Ethereum</span>
+                                    <span class="trending-symbol">ETH</span>
+                                </div>
+                            </div>
+                            <div class="trending-price">
+                                <span class="price">$3,842.11</span>
+                                <span class="change positive">+2.84%</span>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="trending-coin">
+                                <div class="trending-icon sol">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9" fill="#00FFA3"/>
+                                        <path d="M6 8L14 6.5L15 8L7 9.5L6 8Z" fill="#0B0E13"/>
+                                        <path d="M6 10.5L14 9L15 10.5L7 12L6 10.5Z" fill="#0B0E13"/>
+                                    </svg>
+                                </div>
+                                <div class="trending-info">
+                                    <span class="trending-name">Solana</span>
+                                    <span class="trending-symbol">SOL</span>
+                                </div>
+                            </div>
+                            <div class="trending-price">
+                                <span class="price">$182.42</span>
+                                <span class="change positive">+6.12%</span>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="trending-coin">
+                                <div class="trending-icon bnb">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9" fill="#F3BA2F"/>
+                                        <path d="M10 5L12 7L10 9L8 7L10 5Z" fill="#0B0E13"/>
+                                        <path d="M10 11L12 13L10 15L8 13L10 11Z" fill="#0B0E13"/>
+                                        <path d="M7 8L9 10L7 12L5 10L7 8Z" fill="#0B0E13"/>
+                                        <path d="M13 8L15 10L13 12L11 10L13 8Z" fill="#0B0E13"/>
+                                    </svg>
+                                </div>
+                                <div class="trending-info">
+                                    <span class="trending-name">BNB</span>
+                                    <span class="trending-symbol">BNB</span>
+                                </div>
+                            </div>
+                            <div class="trending-price">
+                                <span class="price">$612.80</span>
+                                <span class="change positive">+1.94%</span>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="trending-coin">
+                                <div class="trending-icon xrp">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="9" fill="#23292F"/>
+                                        <path d="M6 6L8.5 8.5L10 7L11.5 8.5L14 6M6 14L8.5 11.5L10 13L11.5 11.5L14 14" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div class="trending-info">
+                                    <span class="trending-name">XRP</span>
+                                    <span class="trending-symbol">XRP</span>
+                                </div>
+                            </div>
+                            <div class="trending-price">
+                                <span class="price">$0.62</span>
+                                <span class="change negative">-1.24%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cryptocurrency Table -->
+            <section class="crypto-table-section">
+                <h3 class="table-title">Top Cryptocurrencies</h3>
+                <div class="table-container">
+                    <table class="crypto-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Asset</th>
+                                <th>Price</th>
+                                <th>24h Change</th>
+                                <th>Market Cap</th>
+                                <th>Volume (24h)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="rank">1</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon btc">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#F7931A"/>
+                                                <path d="M11 7.5C11.5 6.5 12 5.5 10.5 5V4H8.5V5C8 5 7.5 5.1 7 5.3L8 6.5C8.5 6.3 9 6.1 9.5 6V9H8C6.5 9 6 10 6 11C6 12 6.5 13 8 13V14H10V13C10.5 12.9 11 12.7 11.5 12.5L10.5 11C10 11.2 9.5 11.4 9 11.5V9H10.5C12 9 12.5 8 12.5 7C12.5 6 12 5 10.5 5H11V7.5Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">Bitcoin</span>
+                                            <span class="coin-symbol">BTC</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$67,842.19</td>
+                                <td><span class="change positive">+4.28%</span></td>
+                                <td class="market-cap">$1.32T</td>
+                                <td class="volume">$28.4B</td>
+                            </tr>
+                            <tr>
+                                <td><span class="rank">2</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon eth">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#627EEA"/>
+                                                <path d="M9 5L11.5 9L9 10.5L6.5 9L9 5Z" fill="white" fill-opacity="0.8"/>
+                                                <path d="M9 10.5L11.5 12L9 15L6.5 12L9 10.5Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">Ethereum</span>
+                                            <span class="coin-symbol">ETH</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$3,842.11</td>
+                                <td><span class="change positive">+2.84%</span></td>
+                                <td class="market-cap">$462.8B</td>
+                                <td class="volume">$15.2B</td>
+                            </tr>
+                            <tr>
+                                <td><span class="rank">3</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon bnb">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#F3BA2F"/>
+                                                <path d="M9 5L11 7L9 9L7 7L9 5Z" fill="#0B0E13"/>
+                                                <path d="M9 10L11 12L9 14L7 12L9 10Z" fill="#0B0E13"/>
+                                                <path d="M6 7L8 9L6 11L4 9L6 7Z" fill="#0B0E13"/>
+                                                <path d="M12 7L14 9L12 11L10 9L12 7Z" fill="#0B0E13"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">BNB</span>
+                                            <span class="coin-symbol">BNB</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$612.80</td>
+                                <td><span class="change positive">+1.94%</span></td>
+                                <td class="market-cap">$94.2B</td>
+                                <td class="volume">$1.8B</td>
+                            </tr>
+                            <tr>
+                                <td><span class="rank">4</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon sol">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#00FFA3"/>
+                                                <path d="M5.5 7L12.5 5.5L13.5 7L6.5 8.5L5.5 7Z" fill="#0B0E13"/>
+                                                <path d="M5.5 9.5L12.5 8L13.5 9.5L6.5 11L5.5 9.5Z" fill="#0B0E13"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">Solana</span>
+                                            <span class="coin-symbol">SOL</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$182.42</td>
+                                <td><span class="change positive">+6.12%</span></td>
+                                <td class="market-cap">$82.4B</td>
+                                <td class="volume">$3.2B</td>
+                            </tr>
+                            <tr>
+                                <td><span class="rank">5</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon xrp">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#23292F"/>
+                                                <path d="M5.5 5.5L7.5 7.5L9 6L10.5 7.5L12.5 5.5M5.5 12.5L7.5 10.5L9 12L10.5 10.5L12.5 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">XRP</span>
+                                            <span class="coin-symbol">XRP</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$0.62</td>
+                                <td><span class="change negative">-1.24%</span></td>
+                                <td class="market-cap">$34.8B</td>
+                                <td class="volume">$1.4B</td>
+                            </tr>
+                            <tr>
+                                <td><span class="rank">6</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon ada">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#0033AD"/>
+                                                <circle cx="9" cy="9" r="3" stroke="white" stroke-width="1.5"/>
+                                                <circle cx="9" cy="9" r="1" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">Cardano</span>
+                                            <span class="coin-symbol">ADA</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$0.58</td>
+                                <td><span class="change positive">+1.52%</span></td>
+                                <td class="market-cap">$20.4B</td>
+                                <td class="volume">$482M</td>
+                            </tr>
+                            <tr>
+                                <td><span class="rank">7</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon doge">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#C2A633"/>
+                                                <path d="M7 8C7 8 8 7 9.5 7C11 7 11.5 8 11.5 9C11.5 10 10.5 10.5 9.5 10.5C8.5 10.5 7 11 7 11" stroke="#0B0E13" stroke-width="1.5" stroke-linecap="round"/>
+                                                <circle cx="8" cy="7" r="0.5" fill="#0B0E13"/>
+                                                <circle cx="10.5" cy="7" r="0.5" fill="#0B0E13"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">Dogecoin</span>
+                                            <span class="coin-symbol">DOGE</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$0.142</td>
+                                <td><span class="change negative">-2.18%</span></td>
+                                <td class="market-cap">$20.1B</td>
+                                <td class="volume">$1.2B</td>
+                            </tr>
+                            <tr>
+                                <td><span class="rank">8</span></td>
+                                <td>
+                                    <div class="table-coin">
+                                        <div class="table-icon avax">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9" cy="9" r="8" fill="#E84142"/>
+                                                <path d="M6 12L9 6L12 12H6Z" fill="white"/>
+                                                <path d="M9 6L10.5 9H7.5L9 6Z" fill="#E84142"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="coin-name">Avalanche</span>
+                                            <span class="coin-symbol">AVAX</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="price">$42.18</td>
+                                <td><span class="change positive">+3.42%</span></td>
+                                <td class="market-cap">$15.8B</td>
+                                <td class="volume">$624M</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
